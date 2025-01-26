@@ -1,0 +1,926 @@
+/* =================== Typography Start =====================*/
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+
+    background: #F5F5F5;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+.text_para {
+
+    font-size: 16px;
+    font-weight: 400;
+    color: #344054;
+
+}
+
+
+.book_btn {
+    background: linear-gradient(177.38deg, #B564F7 8.45%, #6A2F9B 98.78%);
+    border-radius: 24px;
+    color: white;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+.login_btn {
+    border: 1px solid #D0D5DD;
+    border-radius: 24px;
+    padding: 10px;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    cursor: pointer;
+}
+
+.demo_btn {
+    border: 1px solid #A657E7;
+    border-radius: 24px;
+    padding: 10px 28px;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: white;
+    color: #A657E7;
+}
+
+
+/* =================== Typography Start =====================*/
+
+
+/* ================ Navbar Start From Here =============*/
+
+.navbar_section {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px 10px 100px;
+}
+
+.navbar_menu ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar_menu ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+
+    text-transform: capitalize;
+    padding: 0px 20px;
+    color: #344054;
+}
+
+.navbar_login .login_btn {
+    color: #000;
+    padding: 10px 20px;
+
+}
+
+.menu_icon i {
+    font-size: 50px;
+    display: none;
+}
+
+
+@media all and (max-width : 992px) {
+    .navbar_section {
+        padding: 10px 30px;
+    }
+
+    .navbar_menu {
+        position: relative;
+    }
+
+    .menu_icon i {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .navbar_menu ul {
+        content: '';
+        display: none;
+        position: absolute;
+        bottom: 40;
+        right: 0;
+        width: 300px;
+        border-radius: 10px;
+        background: #000;
+        padding: 20px 5px;
+    }
+
+    .navbar_menu ul li a {
+        color: white;
+        margin: 10px 0px;
+        display: block;
+
+    }
+
+
+
+    .navbar_login {
+        display: none;
+    }
+
+}
+
+/* ================Navbar End=============*/
+
+
+
+
+/* ================Hero Section Start From Here=============*/
+
+.hero_item {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 50px;
+}
+
+.hero_section .container {
+    padding: 50px 100px;
+}
+
+.hero_btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero_btn .book_btn {
+    padding: 10px 28px;
+}
+
+.hero_content h4 {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.hero_content h4 span img {
+    margin-top: 7px;
+}
+
+.hero_content h2 {
+    margin: 20px 0px;
+
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+
+}
+
+.price {
+    color: orangered;
+}
+
+.context,
+.short {
+    color: #A554E6;
+}
+
+.hero_content p {
+    margin: 30px 0;
+
+}
+
+@media all and (max-width : 768px) {
+    .hero_item {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 10px;
+        row-gap: 100px;
+    }
+
+    .hero_section .container {
+        padding: 50px 10px;
+    }
+
+    .hero_thubnail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero_thubnail img {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+    }
+
+}
+
+/* ================Hero Section End=============*/
+
+
+/* ================Sponcer Section Start From Here=============*/
+.sponcer_section {
+    background: white;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+
+.sponcer_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponcer_title {
+    margin-left: 100px;
+}
+
+.sponcer_title h2 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.social h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0px 10px 0px;
+
+}
+
+@media all and (max-width : 768px) {
+    .sponcer_item {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .social img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .sponcer_section .container {
+        padding: 20px;
+    }
+}
+
+
+/* ================Sponcer Section End=============*/
+
+
+/* ================ Services Section Start Form Here =============*/
+.service_section {
+    overflow: hidden;
+}
+
+.service_item {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    row-gap: 100px;
+}
+
+.sub_service {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+
+
+.sub_services_item {
+    border: 1px solid #D0D5DD;
+    border-radius: 20px;
+    padding: 30px 10px;
+}
+
+.sub_services_item h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+
+
+.service_thunail {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 20px;
+}
+
+.service_logo {
+    margin: 20px 0px;
+    width: 100%;
+    display: block;
+}
+
+.service_section .container {
+    padding: 50px 100px;
+}
+
+.service_section .video_title {
+    text-align: center;
+}
+
+.service_sub {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.service_sub h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32.8px;
+
+}
+
+@media all and (max-width : 768px) {
+    .service_item {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        row-gap: 30px;
+    }
+
+    .sub_service {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+
+    .service_section .container {
+        padding: 50px 10px;
+    }
+}
+
+
+
+/* ================ Creative Section Start Form Here ================ */
+.creative_section {
+    overflow: hidden;
+}
+
+.creative_footer_main {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.creative_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 30px;
+}
+
+.creative_sec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.content_content h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: #101828;
+    margin-bottom: 20px;
+
+}
+
+.creative_sub_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #D0D5DD;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.content_content h4 {
+    display: inline-block;
+    background: #475467;
+    font-family: Poppins;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.creative_sub_item .check_icon {
+    background: #a554e6;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    display: block;
+}
+
+.creative_main_title {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.creative_section .video_title {
+    text-align: center;
+}
+
+.creative_sec h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+
+
+}
+
+.creative_thubnail {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.creative_thubnail h3 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #101828;
+
+}
+
+
+
+.creative_thubnail i {
+    background: #1e9500;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    font-size: 14px;
+    display: block;
+}
+
+.creative_main_title h4 {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: center;
+    color: #344054;
+
+}
+
+.creative_section .container {
+    padding: 50px 100px;
+}
+
+.book_last {
+    margin-top: 100px;
+}
+
+.book_last .book_btn {
+    padding: 10px 28px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto
+}
+
+@media all and (max-width : 768px) {
+    .creative_footer {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-gap: 30px;
+    }
+
+    .creative_section .container {
+        padding: 50px 10px;
+    }
+
+    .creative_main_title {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+
+}
+
+/* ================ Creative Section End ================ */
+
+/* ================ Questions Section Start Form Here ================ */
+.questions_section {
+    overflow: hidden;
+}
+
+.question_thubnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 20px 0px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.questions_section .container {
+    padding: 50px 100px;
+}
+
+.questions_section h2 {
+    text-align: center;
+}
+
+.question_title2 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #1D2939;
+    margin-bottom: 80px;
+}
+
+.question_title h3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.question_thubnail,
+logo i {
+    font-size: 20px;
+    cursor: pointer;
+    /* color: white; */
+}
+
+
+
+
+.question_title p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #949494;
+}
+
+
+@media all and (max-width : 768px) {
+    .questions_section .container {
+        padding: 50px 10px;
+    }
+
+}
+
+/* ================ Questions Section End ================ */
+
+
+/* ================ Popular Section Start Form Here ================ */
+.popular_section {
+    background: white;
+}
+
+.popular_section .container {
+    padding: 50px 100px;
+}
+
+.popular_content h3 {
+    font-family: "Raleway", serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.popular_content .book_btn {
+    padding: 8px 27px;
+    margin-top: 30px;
+}
+
+.popular_item {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    margin: auto;
+    grid-gap: 20px;
+    align-items: center;
+
+}
+
+
+@media all and (max-width : 768px) {
+    .popular_item {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .popular_thubnail img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .popular_section .container {
+        padding: 50px 10px;
+    }
+}
+
+@media all and (max-width : 578px) {
+    .video_item {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+}
+
+
+/* ================ Video Section Start Form Here ================ */
+.video_section {
+    overflow: hidden;
+}
+
+.video_section .container {
+    padding: 50px 100px;
+}
+
+.video_title {
+
+    font-size: 48px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.video_sub_title {
+    color: #A554E6;
+}
+
+.video_item {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    row-gap: 10px;
+
+}
+
+.video_section .box {
+    background: #000;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+@media all and (max-width : 992px) {
+    .video_item {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .video_item img {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+
+}
+
+@media all and (max-width : 768px) {
+    .video_item {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .video_section .container {
+        padding: 50px 10px;
+    }
+}
+
+@media all and (max-width : 578px) {
+    .video_item {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+}
+
+/* ================ Questions Section End ================ */
+
+
+/* Footer Section Start From Here */
+.footer_section {
+    background: white;
+    padding: 45px 0px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_section .container {
+    padding: 10px 100px;
+}
+
+.footer_item:first-child,
+.footer_item:last-child {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.footer_item:nth-child(2),
+.footer_item:nth-child(3) {
+    width: 18%;
+    margin: 20px auto;
+}
+
+
+.footer_item h5 {
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0px;
+
+}
+
+.footer_item p {
+    line-height: 26.24px;
+    margin-bottom: 20px;
+}
+
+.footer_item h4 {
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.footer_item ul li a {
+
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    color: #344054;
+    margin: 10px 0px;
+}
+
+.footer_btn .book_btn {
+    padding: 8px 27px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.footer_btn .login_btn {
+    padding: 8px 27px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.footer_item .input_item input,
+textarea {
+    width: 80%;
+    display: block;
+    border: 2px solid #D0D5DD;
+    outline: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: #98A2B3;
+
+    font-weight: 400;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+.submit_form {
+    width: 90%;
+}
+
+
+.input_item button {
+    background: #1D1D1D;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 100px;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.footer_line {
+    border: 1px solid #D0D5DD;
+    margin: 40px 0px;
+}
+
+.copy_right p {
+
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+@media all and (max-width : 768px) {
+    .footer_content {
+        flex-wrap: wrap;
+    }
+
+    .footer_item:first-child,
+    .footer_item:last-child {
+        width: 50%;
+        /* margin: 20px auto; */
+    }
+
+    .footer_item:nth-child(2),
+    .footer_item:nth-child(3) {
+        width: 50%;
+        /* margin: 20px auto; */
+    }
+
+    .footer_section .container {
+        padding: 50px 10px;
+    }
+}
+
+@media all and (max-width : 578px) {
+
+    .footer_item:first-child,
+    .footer_item:last-child {
+        width: 100%;
+        /* margin: 20px auto; */
+    }
+
+    .footer_item:nth-child(2),
+    .footer_item:nth-child(3) {
+        width: 100%;
+    }
+}
